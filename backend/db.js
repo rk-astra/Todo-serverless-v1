@@ -7,7 +7,8 @@ mongoose.connect(DATABASE_URI)
 const userSchema = mongoose.Schema({
   username:{
     type: string,
-    required: true
+    required: true,
+    unique: true
   },
   password:{
     type: string,
