@@ -5,6 +5,12 @@ mongoose.connect(DATABASE_URI)
 .catch((e) => {console.log("connection to db failed");
 
 const userSchema = mongoose.Schema({
-  username:{},
-  password:{}
+  username:{
+    type: string,
+    required: true
+  },
+  password:{
+    type: string,
+    required: true
+  }
 })
