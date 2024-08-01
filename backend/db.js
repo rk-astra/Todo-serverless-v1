@@ -14,4 +14,6 @@ const userSchema = mongoose.Schema({
     type: string,
     required: true
   }
-})
+});
+
+const USER = mongoose.Model("USER", usesSchema);
