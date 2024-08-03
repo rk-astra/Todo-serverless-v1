@@ -15,7 +15,6 @@ const userSchema = mongoose.Schema({
     required: true
   }
 });
-
 const todoSchema = mongoose.Schema({
   title: {
     type: string,
@@ -33,7 +32,6 @@ const todoSchema = mongoose.Schema({
     unique: true
   }
 });
-
 const User = mongoose.Model("User", usesSchema);
 const Todo = mongoose.Model("Todo", todoSchema);
 
