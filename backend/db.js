@@ -16,6 +16,8 @@ const userSchema = mongoose.Schema({
   }
 });
 
+const todoSchema = mongoose.Schema({});
+
 const User = mongoose.Model("User", usesSchema);
 
 module.exports = User;
