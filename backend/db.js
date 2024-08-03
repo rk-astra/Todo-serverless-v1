@@ -17,8 +17,16 @@ const userSchema = mongoose.Schema({
 });
 
 const todoSchema = mongoose.Schema({
-  title: {},
-  description: {},
+  title: {
+    type: string,
+    required: true,
+    unique: true
+  },
+  description: {
+    type: string,
+    required: true,
+    unique: true
+  },
   author:{}
 });
 
