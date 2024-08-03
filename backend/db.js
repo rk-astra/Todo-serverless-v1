@@ -16,7 +16,11 @@ const userSchema = mongoose.Schema({
   }
 });
 
-const todoSchema = mongoose.Schema({});
+const todoSchema = mongoose.Schema({
+  title: {},
+  description: {},
+  author:{}
+});
 
 const User = mongoose.Model("User", usesSchema);
 
