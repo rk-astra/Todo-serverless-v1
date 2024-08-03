@@ -27,7 +27,11 @@ const todoSchema = mongoose.Schema({
     required: true,
     unique: true
   },
-  author:{}
+  author:{
+    type: mongoose.Model.type.ObjectId,
+    required: true,
+    unique: true
+  }
 });
 
 const User = mongoose.Model("User", usesSchema);
