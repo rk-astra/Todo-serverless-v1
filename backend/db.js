@@ -33,6 +33,7 @@ const todoSchema = mongoose.Schema({
     unique: true
   }
 });
+               
 const User = mongoose.Model("User", usesSchema);
 const Todo = mongoose.Model("Todo", todoSchema);
 module.exports = { User, Todo };
